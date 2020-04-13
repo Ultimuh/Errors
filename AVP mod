@@ -1,0 +1,21 @@
+Exception in RimWorld.ThinkNode_ConditionalNotPawnKind TryIssueJobPackage: System.NullReferenceException: Object reference not set to an instance of an object
+  at RRYautja.XenomorphKidnapUtility.TryFindGoodHiveLoc (Verse.Pawn pawn, Verse.IntVec3& c, Verse.Pawn victim, System.Boolean allowFogged, System.Boolean allowUnroofed, System.Boolean allowDigging) [0x00224] in <402069988fba4ae8a7e0fb9d54fe3827>:0 
+  at RimWorld.JobGiver_LayXenoEgg.TryGiveJob (Verse.Pawn pawn) [0x00089] in <402069988fba4ae8a7e0fb9d54fe3827>:0 
+  at Verse.AI.ThinkNode_JobGiver.TryIssueJobPackage (Verse.Pawn pawn, Verse.AI.JobIssueParams jobParams) [0x00000] in <c8e8d421567e4ee5864626a429a27a37>:0 
+  at Verse.AI.ThinkNode_Priority.TryIssueJobPackage (Verse.Pawn pawn, Verse.AI.JobIssueParams jobParams) [0x00022] in <c8e8d421567e4ee5864626a429a27a37>:0 
+Verse.Log:Error(String, Boolean)
+Verse.AI.ThinkNode_Priority:TryIssueJobPackage(Pawn, JobIssueParams)
+Verse.AI.ThinkNode_Conditional:TryIssueJobPackage(Pawn, JobIssueParams)
+Verse.AI.ThinkNode_Priority:TryIssueJobPackage(Pawn, JobIssueParams)
+Verse.AI.ThinkNode_Conditional:TryIssueJobPackage(Pawn, JobIssueParams)
+Verse.AI.ThinkNode_Priority:TryIssueJobPackage(Pawn, JobIssueParams)
+Verse.AI.Pawn_JobTracker:DMD<DMD<DetermineNextJob_Patch4>?1570151680::DetermineNextJob_Patch4>(Pawn_JobTracker, ThinkTreeDef&)
+Verse.AI.Pawn_JobTracker:TryFindAndStartJob()
+Verse.AI.Pawn_JobTracker:EndCurrentJob(JobCondition, Boolean, Boolean)
+Verse.AI.Pawn_JobTracker:JobTrackerTick()
+Verse.Pawn:DMD<DMD<Tick_Patch3>?-2066204032::Tick_Patch3>(Pawn)
+Verse.TickList:Tick()
+Verse.TickManager:DoSingleTick()
+Verse.TickManager:TickManagerUpdate()
+Verse.Game:UpdatePlay()
+Verse.Root_Play:DMD<DMD<Update_Patch1>?-2078509056::Update_Patch1>(Root_Play)
